@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:opt="http://java.sun.com/jsf/composite/bootstrap">
+
+<h:head>
+
+
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>
+        <ui:insert name="title">
+            taddum.com
+        </ui:insert>
+    </title>
+    <h:outputStylesheet library="/resources/bootstrap/css" name="style.css" />
+    <h:outputStylesheet library="/resources/bootstrap/css" name="bootstrap.min.css" />
+    <h:outputStylesheet library="/resources/bootstrap/css" name="bootstrap-theme.min.css" />
+    <h:outputScript library="/resources/bootstrap/js" name="bootstrap.min.js" />
+    <h:outputScript library="/resources/bootstrap/js" name="jquery.js" />
+     
+    <script>
+        $a = jQuery.noConflict();
+        $a(document).ready(function() {
+            var heightWindow = $a(window).height();
+            var heightBody   = document.body.clientHeight;
+            if(heightWindow > heightBody){
+                $a("#footer").css('position', 'fixed');
+                $a("#footer").css('bottom', '0');
+            }                
+        });
+    </script>
+    
+    
+    
+</h:head>
+
+
+
+<f:loadBundle basename="com.messages" var="msgs" />
+
+<h:body class="body">
+
+
+
+
+
+              
+              <h:form id="reg" styleClass="form-horizontal">
+              
+              
+              
+              
+              <h:panelGrid columns="4">
+
+			  <h:panelGroup>  
+			 
+                <h:outputText value="#{msgs['home.usuario.title']}" />
+                
+                <p:inputText title="#{msgs['home.usuario.title']}"
+                             label="#{msgs['home.usuario.title']}"
+                             value="#{mbUsuario.message}" />
+              </h:panelGroup>   
+
+
+            
+
+               <h:panelGroup>  
+
+                <h:outputText value="#{msgs['home.usuario.title']}" />
+                
+                <p:inputText rendered="{(not mbUsuario.message) and (not empty mbUsuario.message)}"
+                             title="#{msgs['home.usuario.title']}"
+                             label="#{msgs['home.usuario.title']}"
+                             value="#{mbUsuario.message}" />
+                             
+              </h:panelGroup>
+
+			<!-- botao -->
+			<div class="form-actions">
+				<h:commandButton id="register" action="#{memberController.register}"
+					value="Salvar" styleClass="btn btn-primary" />
+			</div>
+
+
+
+		</h:panelGrid>
+              </h:form>
+
+
+
+
+
+
+<h3>Responsive</h3>
+<p:panelGrid columns="3" layout="grid">            
+    <h:outputText value="Content" /> 
+    <h:outputText value="Content" /> 
+    <h:outputText value="Content" /> 
+ 
+    <h:outputText value="Content" /> 
+    <h:outputText value="Content" /> 
+    <h:outputText value="Content" /> 
+ 
+    <h:outputText value="Content" /> 
+    <h:outputText value="Content" /> 
+    <h:outputText value="Content" /> 
+</p:panelGrid>
+
+
+
+
+
+
+</h:body>
+
+
+</html>

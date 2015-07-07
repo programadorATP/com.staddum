@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+ <!-- Messages Internaciolozadas -->
+ <application>
+  <resource-bundle>
+   <base-name>com.messages</base-name>
+   <var>msgs</var>
+  </resource-bundle>
+  <application-extension/>
+ </application>
+ 
+ <!-- MbUsuario -->
+ <managed-bean>
+ <managed-bean-name>mbUsuario</managed-bean-name>
+ <managed-bean-class>mb.MbUsuario</managed-bean-class>
+ <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     
+ 
+</faces-config>
