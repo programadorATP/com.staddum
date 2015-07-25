@@ -4,10 +4,7 @@ import java.io.Serializable;
 
 import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
-import javax.faces.bean.ManagedProperty;
 import javax.faces.view.ViewScoped;
-
-import entidade.Usuario;
 
 
 
@@ -18,12 +15,22 @@ import entidade.Usuario;
 public class MbUsuario implements Serializable {
 
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@PostConstruct
-    public void init() {
-//        showQuestions = true;
-//        UUID uuid = UUID.randomUUID();
-//        CookieHelper ch = new CookieHelper();
-//        ch.setCookie("COOKIE_UUID_SURVEY", uuid.toString(), 60 * 60 * 24 * 365 * 10);
-    }
+	public void init(){
+		System.out.println(" Bean mbUsuario... ");
+	}
+	
+	public String getMessage(){
+		return "Hello World JSF!";
+	}
+
+
+	
+	
 	
 }
