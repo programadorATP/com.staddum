@@ -7,7 +7,7 @@
 	 	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 	 	
 	 	
-    <jta-data-source>jdbc/dbtp</jta-data-source>
+    <jta-data-source>dbtpPool</jta-data-source>
     
     
     <class>entidade.Usuario</class>
