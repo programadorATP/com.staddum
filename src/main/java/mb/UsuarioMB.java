@@ -10,9 +10,9 @@ import javax.faces.view.ViewScoped;
 
 
 //exomplo01
-@ManagedBean(value = "mbUsuario")
+@ManagedBean(value = "UsuarioMB")
 @ViewScoped
-public class MbUsuario implements Serializable {
+public class UsuarioMB implements Serializable {
 
 	
 	/**
@@ -22,7 +22,7 @@ public class MbUsuario implements Serializable {
 
 	@PostConstruct
 	public void init(){
-		System.out.println(" Bean mbUsuario... ");
+		System.out.println(" Bean UsuarioMB... ");
 	}
 	
 	public String getMessage(){
