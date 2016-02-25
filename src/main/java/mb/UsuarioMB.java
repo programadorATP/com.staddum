@@ -10,7 +10,7 @@ import javax.faces.view.ViewScoped;
 
 
 //exomplo01
-@ManagedBean(value = "UsuarioMB")
+@ManagedBean(value = "usuarioMB")
 @ViewScoped
 public class UsuarioMB implements Serializable {
 

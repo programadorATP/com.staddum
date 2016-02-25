@@ -63,7 +63,7 @@
                 
                 <p:inputText title="#{msgs['home.usuario.title']}"
                              label="#{msgs['home.usuario.title']}"
-                             value="#{mbUsuario.message}" />
+                             value="#{usuarioMB.message}" />
               </h:panelGroup>   
 
 
@@ -73,10 +73,10 @@
 
                 <h:outputText value="#{msgs['home.usuario.title']}" />
                 
-                <p:inputText rendered="{(not mbUsuario.message) and (not empty mbUsuario.message)}"
+                <p:inputText rendered="{(not usuarioMB.message) and (not empty usuarioMB.message)}"
                              title="#{msgs['home.usuario.title']}"
                              label="#{msgs['home.usuario.title']}"
-                             value="#{mbUsuario.message}" />
+                             value="#{usuarioMB.message}" />
                              
               </h:panelGroup>
 
