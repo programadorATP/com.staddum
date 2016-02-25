@@ -45,5 +45,6 @@
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_60/lib/plugin.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_60/lib/resources.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_60/lib/rt.jar"/>
+	<classpathentry kind="con" path="org.jboss.ide.eclipse.as.classpath.core.javaee-5.0"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
