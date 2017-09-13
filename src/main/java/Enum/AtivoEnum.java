@@ -1,9 +1,6 @@
 package Enum;
 
 public enum AtivoEnum {
-
-	
-
 V(1), F(2);
 	
 	private final int valor;

@@ -30,6 +30,19 @@ public class UsuarioMB implements Serializable {
 	}
 
 
+	public void limpar(){
+		
+		
+		
+		
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
+	
 	
 	
 	

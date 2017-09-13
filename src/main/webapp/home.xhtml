@@ -55,21 +55,21 @@
               
               
               
-              <h:panelGrid columns="4">
+              <p:panelGrid columns="4">
 
-			  <h:panelGroup>  
+			  <p:panelGroup>  
 			 
                 <h:outputText value="#{msgs['home.usuario.title']}" />
                 
                 <p:inputText title="#{msgs['home.usuario.title']}"
                              label="#{msgs['home.usuario.title']}"
                              value="#{usuarioMB.message}" />
-              </h:panelGroup>   
+              </p:panelGroup>   
 
 
-            
+            <br/>
 
-               <h:panelGroup>  
+               <p:panelGroup>  
 
                 <h:outputText value="#{msgs['home.usuario.title']}" />
                 
@@ -78,17 +78,17 @@
                              label="#{msgs['home.usuario.title']}"
                              value="#{usuarioMB.message}" />
                              
-              </h:panelGroup>
+              </p:panelGroup>
 
 			<!-- botao -->
 			<div class="form-actions">
-				<h:commandButton id="register" action="#{memberController.register}"
+				<h:commandButton id="register" action="#{usuarioMB.limpar}"
 					value="Salvar" styleClass="btn btn-primary" />
 			</div>
 
 
 
-		</h:panelGrid>
+		</p:panelGrid>
               </h:form>
 
 
